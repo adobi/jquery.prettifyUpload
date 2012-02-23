@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Le jQuery pretty file input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      
+      input {
+        font-size:1.2em;
+        padding:10px 12px;
+      }
+      
+    </style>
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/google-code-prettify/prettify.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <a href="https://github.com/adobi/jquery.charcounter"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>jquery.prettifyUpload</h1>
+        <br>
+        <p>A simple file input prettifier for jQuery using Bootstrap from Twitter</p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12"><h2>Works with:</h2></div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <h3><code>input[type=text]</code></h3>
+          <br>
+          <div>
+            <h4>Old one</h4>
+            <input type="file"> 
+          </div>
+          <br>
+          <div>
+            <h4>New one</h4>
+            <input type="file" data-pretty-file="" multiple="">
+          </div>
+        </div>
+        <div class="span12">
+          <h6>Markup</h6>
+          <pre class="prettyprint linenums">
+&lt;input type="file" data-pretty-file="" multiple=""&gt;</pre>         
+          <br><br>
+          <h6>Javascript</h6>
+          <pre class="prettyprint linenums">
+$('[data-pretty-file]').prettifyUpload(); // included in the plugin</pre>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <h2>
+          Download
+          <p class="pull-right" style="text-align:right"><strong><a href="http://twitter.com/adobi">@adobi</a></strong></p>
+        </h2>
+        <div class="download">
+          <a href="https://github.com/adobi/jquery.prettifyUpload/zipball/master">
+            <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+          <a href="https://github.com/adobi/jquery.prettifyUpload/tarball/master">
+            <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+        </div>
+        <p>
+          <pre>$ git clone git://github.com/adobi/jquery.prettifyUpload</pre>
+        </p>
+    
+        <div>
+          or get the source code on <a href="https://github.com/adobi/jquery.prettifyUpload">GitHub</a>
+        </div>
+
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src = "http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="jquery.prettify-upload.js"></script>
+    
+    <script src="assets/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        window.prettyPrint && prettyPrint() 
+      })
+    </script>
+
+  </body>
+</html>
